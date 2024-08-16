@@ -1,0 +1,85 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+  style
+    include ../static/style.css
+
+block content
+  section#introsection
+    div Welcome to Zuhair's GYM Academy
+    div.small Eat Gym Sleep Repeat
+
+  section#missionsection.hidden-section
+    h2 Our Mission
+    div.card
+      h3 Body Perfection
+      div.card-box
+        div.card-img
+          img(src="/static/m2.jpg")
+        div.card-content
+          p Special Attention to Everyone on their health and diet in ZGA.
+    div.card
+      h3 Gym as You Like
+      div.card-box
+        div.card-img
+          img(src="/static/m3.jpg")
+        div.card-content
+          p All the things and days are aligned according to your mindset.
+    div.card
+      h3 Expert Tracking
+      div.card-box
+        div.card-img
+          img(src="/static/m4.jpg")
+        div.card-content
+          p We have an Expert tracking system to maintain health.
+
+  section#featuressection.hidden-section
+    h2 Why Choose Us?
+    div.feature
+      img(src="/static/feat_img/im1.jpg", alt="Personalized Training")
+      h3 Personalized Training
+      p We tailor workouts to individual goals and needs.
+    div.feature
+      img(src="/static/feat_img/im2.png", alt="State-of-the-Art Equipment")
+      h3 State-of-the-Art Equipment
+      p Top-notch equipment for the best workout experience.
+    div.feature
+      img(src="/static/feat_img/im3.jpeg", alt="Community Support")
+      h3 Community Support
+      p Join a community that motivates and supports you.
+
+  section#testimonialssection.hidden-section
+    h2 Testimonials
+    div.testimonial
+      blockquote
+        p "ZGA has transformed my life! The trainers are amazing and the community is so supportive."
+        footer - Sarah L.
+    div.testimonial
+      blockquote
+        p "The personalized training programs have helped me achieve my fitness goals faster than I ever thought possible."
+        footer - Mark T.
+
+  section#gallerysection.hidden-section
+    h2 Our Gallery
+    .swiper
+        .swiper-wrapper
+            div.swiper-slide
+                img(src="/static/feat_img/im4.jpg", alt="Gym Equipment")
+            div.swiper-slide
+                img(src="/static/feat_img/im5.jpg", alt="Training Session")
+            div.swiper-slide
+                img(src="/static/feat_img/im6.jpg", alt="Gym Environment")
+        .swiper-button-next
+        .swiper-button-prev
+
+
+  section#sponsorsection.hidden-section
+    h2 Our Sponsors
+    div#sponsor
+      img(src="/static/sp1r.png", alt="Sponsor Image", class="spimage")
+      img(src="/static/sp2r.png", alt="Sponsor Image", class="spimage")
+      img(src="/static/images/sp3.png", alt="Sponsor Image", class="spimage")
+      img(src="/static/sp4r.png", alt="Sponsor Image", class="spimage")

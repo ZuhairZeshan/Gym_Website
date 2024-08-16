@@ -1,0 +1,53 @@
+doctype html
+html
+  head
+    title Zuhair GYM Website
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css")
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css")
+    script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
+    block style
+    block scripts
+  body
+    div#navbar-wrapper
+      nav#navbar
+        ul
+          div#logo
+            img(src='/static/go.png')
+            | ZGA
+          li #[a(href="/", id="home-link") Home]
+          li #[a(href="/about", id="about-link") About]
+          li #[a(href="/services",id="services-link") Services]
+          li #[a(href="/contact", id="contact-link") Contact Us]
+    div#content-wrapper(class="content-fade")
+      block content
+    footer#footer
+      .footer-content
+        .footer-section.about
+          h3 About Us
+          p 
+            | Zuhair's Gym Academy (ZGA) is your destination for top-notch fitness services, offering personalized training in a supportive community environment.
+        .footer-section.links
+          h3 Quick Links
+          ul
+            li #[a(href="/about") About]
+            li #[a(href="/services") Services]
+            li #[a(href="/contact") Contact Us]
+        .footer-section.socials
+          h3 Connect With Us
+          ul.socials-icons
+            li
+              a(href="https://www.facebook.com/login/" target="_blank")
+                i.fab.fa-facebook
+            li
+              a(href="https://www.instagram.com/accounts/login/?hl=en" target="_blank")
+                i.fab.fa-instagram
+        .footer-section.contact
+          h3 Contact Us
+          p 
+            | Email: #[a(href="mailto:zuhairzeshan60@gmail.com") zuhairzeshan60@gmail.com]
+          p 
+            | Phone: +92 3351220321 
+        .footer-bottom
+          p 
+            | &copy; 2024 Zuhair Zeshan's Website
+

@@ -1,0 +1,22 @@
+{
+  "name": "zuhair-dance-academy",
+  "version": "1.0.0",
+  "description": "This is Dance Website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Do",
+    "it"
+  ],
+  "author": "Zuhair Bhai",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.2",
+    "pug": "^3.0.3"
+  }
+}

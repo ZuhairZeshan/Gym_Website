@@ -1,0 +1,71 @@
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px); /* Adjust this value to control the amount of movement */
+    transition: opacity 0.5s ease, visibility 0.5s ease, transform 0.5s ease;
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+#aboutsection {
+    background: url('/static/about2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    padding: 50px 20px;
+    font-family: Arial, sans-serif;
+}
+
+#aboutsection h1,
+#aboutsection h2 {
+    text-align: center;
+    color: #d13838;
+    margin-bottom: 20px;
+}
+
+#aboutsection p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#aboutsection ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+#aboutsection ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#aboutsection ul li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #d13838;
+    font-size: 20px;
+    line-height: 1;
+}
+
+#aboutsection p,
+#aboutsection ul {
+    text-align: justify;
+}
+
+#aboutsection h2 {
+    margin-top: 40px;
+    font-size: 24px;
+}

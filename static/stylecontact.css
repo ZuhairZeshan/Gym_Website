@@ -1,0 +1,71 @@
+body{
+    background: url('/static/about2.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    margin: 12px 0px;
+    color: red;
+}
+
+.myform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+}
+
+.container{
+    min-height: 80vh;
+}
+
+.myinput{
+    width: 40%;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    font-size: 20px;
+    border-radius: 10px;
+    outline-color: #d13838;
+}
+
+.btn{
+    padding: 15px;
+    font-size: 20px;
+    border: 5px solid #d13838;
+    border-radius: 15px;
+    color: white;
+    background-color: #d13838;
+    cursor: pointer;
+}
+
+
+/* alert css */
+.alert {
+    position: fixed;
+    top: 570px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    z-index: 1000;
+    opacity: 0.9;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .alert.success {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .alert.error {
+    background-color: #f44336;
+    color: white;
+  }
+  
+
+

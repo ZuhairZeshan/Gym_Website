@@ -1,0 +1,54 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src='/static/images/logo2.jpg')
+                | ZDA
+            li #[a(href="/") Home] 
+            li #[a(href="/") About] 
+            li #[a(href="/") Services] 
+            li #[a(href="/") Contact Us] 
+            li #[a(href="/") Class Info]
+    section#introsection
+        div Welcome to Zuhair`s GYM Academy
+        div.small Eat Dance Sleep Repeat
+    section#missionsection
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/images/im1.jpeg")
+                div.card-content
+                    p This is the best Dance Academy in the Universe.    
+        div.card
+            h3 Dance as you Like
+            div.card-box
+                div.card-img
+                    img(src="/static/images/im1.jpeg")
+                div.card-content
+                    p This is the best Dance Academy in the Universe.
+        div.card
+            h3 Expert Tracking 
+            div.card-box
+                div.card-img
+                    img(src="/static/images/im1.jpeg")
+                div.card-content
+                    p This is the best Dance Academy in the Universe.
+    section#sponsorsection
+        h2 Our Sponsor
+        div#sponsor
+            img(src="/static/images/sp1.png", alt="Sponsor Image", class="spimage")
+            img(src="/static/images/sp2.png", alt="Sponsor Image", class="spimage")
+            img(src="/static/images/sp3.png", alt="Sponsor Image", class="spimage")
+            img(src="/static/images/sp4.jpg", alt="Sponsor Image", class="spimage")
+    footer#footer
+        | Zuhari Zeshan`s Website
+    script
+      include ../static/index.js

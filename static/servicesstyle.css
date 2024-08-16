@@ -1,0 +1,76 @@
+
+#servicessection {
+    background: url('/static/about2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    padding-top: 20px;
+    padding-bottom: 35px;
+    font-size: 40px;
+    color: red;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.service h2 {
+    color: #d13838;
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+.service p {
+    padding: 0 20px;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.service a.btn {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #d13838;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.service a.btn:hover {
+    background-color: #a12323;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.service:hover img {
+    opacity: 0.9;
+}

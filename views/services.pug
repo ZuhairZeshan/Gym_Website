@@ -1,0 +1,62 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style 
+    style
+      include ../static/style.css
+      include ../static/servicesstyle.css
+
+block content 
+    section#servicessection
+        h1 Our Services
+        div.container
+            div.service
+                img(src='/static/personal1.jpeg', alt='Service 1 Image')
+                h2 Personal Training
+                p
+                    | Experience personalized fitness programs designed to help you reach your goals with one-on-one attention from our expert trainers.
+                a(href='/contact', class='btn') Contact Us
+
+            div.service
+                img(src='/static/g1.jpg', alt='Service 2 Image')
+                h2 Group Classes
+                p
+                    | Join our dynamic group fitness classes to stay motivated and have fun while working out with others who share your fitness goals.
+                a(href='/contact', class='btn') Contact Us
+
+            div.service
+                img(src='/static/n1.jpg', alt='Service 3 Image')
+                h2 Nutrition Coaching
+                p
+                    | Get expert advice on nutrition and meal planning to complement your workouts and achieve a balanced, healthy lifestyle.
+                a(href='/contact', class='btn') Contact Us
+
+            div.service
+                img(src='/static/w1.png', alt='Service 4 Image')
+                h2 Wellness Programs
+                p
+                    | Explore our holistic wellness programs designed to improve your overall well-being with a focus on mental and physical health.
+                a(href='/contact', class='btn') Contact Us
+
+            div.service
+                img(src='/static/t1.jpg', alt='Service 5 Image')
+                h2 Massage Therapy
+                p
+                    | Treat yourself to relaxation and recovery with our professional massage therapy services, perfect for relieving stress and tension.
+                a(href='/contact', class='btn') Contact Us
+
+            div.service
+                img(src='/static/yoga1.jpg', alt='Service 6 Image')
+                h2 Yoga Classes
+                p
+                    | Join our yoga classes to enhance flexibility, strength, and balance while achieving a deep sense of relaxation and mental clarity.
+                a(href='/contact', class='btn') Contact Us
+
+            div.service
+                img(src='/static/sp1.jpg', alt='Service 7 Image')
+                h2 Sports Training
+                p
+                    | Specialized sports training programs designed to improve performance, agility, and strength tailored to various sports disciplines.
+                a(href='/contact', class='btn') Contact Us

@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hidden-section {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible-section {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.content-fade {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.content-fade.fade-in {
+    opacity: 1;
+}
+
+#navbar-wrapper {
+    overflow: hidden;
+    /* Ensures content stays within bounds during animation */
+}
+
+#navbar {
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+#navbar.slide-out {
+    transform: translateX(-100%);
+}
+
+#navbar.slide-in {
+    transform: translateX(0);
+}
+
+
+#logo {
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0px 14px;
+    cursor: pointer;
+}
+
+#logo img {
+    height: 42px;
+    margin: 0px 8px;
+}
+
+#navbar {
+    background-color: #d13838;
+    padding: 13px 14px;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+}
+
+#navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 13px 30px;
+    margin: 0px 5px
+}
+
+#navbar li a:hover {
+    color: red;
+    background-color: black;
+    /* border: 2px solid white; */
+    border-radius: 10px;
+    margin: 0px 5px
+}
+
+#navbar li a.active {
+    color: red;
+    background-color: black;
+    border-radius: 10px;
+    margin: 0px 5px
+}
+
+#introsection {
+    color: white;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: center/cover no-repeat url("../static/gback2.jpg");
+    height: 650px;
+}
+
+#introsection div.small {
+    font-size: 27px;
+}
+
+/* Mission Section */
+#missionsection {
+    background-color: white;
+    height: 500px;
+    text-align: center;
+    padding-top: 34px;
+}
+
+#missionsection h2 {
+    margin: 0 auto;
+    width: 30%;
+    font-size: 30px;
+    color: red;
+}
+
+.card {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 25%;
+    height: 209px;
+    margin: 75px 25px;
+    display: inline-block;
+    vertical-align: top;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    position: relative; /* For pseudo-element positioning */
+}
+
+.card h3 {
+    margin: 8px;
+}
+
+.card-img {
+    height: 116px;
+    padding: 0px 14px;
+    margin: 5px 9px;
+}
+
+.card-img img {
+    height: inherit;
+}
+
+.card-content {
+    padding: 1px 0px;
+}
+
+.card-content p {
+    font-size: 20px;
+}
+
+.card:hover {
+    transform: translateY(0) scale(1.05);
+    opacity: 1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Fade-in effect when the cards come into view */
+.visible-card {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Optional pseudo-element for a decorative effect */
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.1) 100%);
+    border-radius: 10px;
+    transition: opacity 0.6s ease-out;
+    opacity: 0;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+
+/* Features Section */
+#featuressection {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#featuressection h2 {
+    font-size: 30px;
+    color: #d13838;
+    margin-bottom: 20px;
+}
+
+.feature {
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.feature img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Testimonials Section */
+#testimonialssection {
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#testimonialssection h2 {
+    font-size: 30px;
+    color: #d13838;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    display: inline-block;
+    width: 40%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #555;
+    border-radius: 10px;
+    text-align: left;
+}
+
+blockquote {
+    font-size: 18px;
+    line-height: 1.5;
+    position: relative;
+    padding: 15px 20px;
+    background: #444;
+    border-radius: 5px;
+    color: #eee;
+}
+
+blockquote::before {
+    content: "“";
+    font-size: 50px;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    color: #d13838;
+}
+
+blockquote footer {
+    font-size: 14px;
+    color: #999;
+    margin-top: 10px;
+}
+
+/* Gallery Section */
+#gallerysection {
+    background-color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#gallerysection h2 {
+    font-size: 30px;
+    color: #d13838;
+    margin-bottom: 20px;
+}
+
+.swiper {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #d13838; /* Customize the arrow color */
+}
+
+
+/* Sponsor Section */
+#sponsorsection {
+    height: 300px;
+    background-color: #d13838;
+    color: white;
+    text-align: center;
+    padding-top: 34px;
+}
+
+#sponsorsection h2 {
+    margin: 0 auto;
+    width: 30%;
+    font-size: 30px;
+    color: black;
+}
+
+#sponsor {
+    height: 205px;
+    max-width: 2000px;
+    margin: 27px auto;
+}
+
+.spimage {
+    cursor: pointer;
+    height: 57%;
+    margin: 20px 35px;
+}
+
+
+/* footer */
+#footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    color: #d13838;
+    margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #d13838;
+}
+
+.socials-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.socials-icons li {
+    margin: 0 10px;
+}
+
+.socials-icons li a {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.socials-icons li a:hover {
+    color: #d13838;
+}
+
+.footer-bottom {
+    padding-top: 10px;
+    border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-bottom a:hover {
+    color: #d13838;
+}
+
+
+/* Body Fade-Out Effect */
+body.fade-out {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+

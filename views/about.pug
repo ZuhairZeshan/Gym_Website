@@ -1,0 +1,33 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js') // Ensure this script file is included
+
+block style 
+    style
+      include ../static/style.css
+      include ../static/styleabout.css
+
+block content 
+    section#aboutsection
+        h1.hidden About Zuhair's GYM Academy
+        p.hidden
+            | Welcome to Zuhair's GYM Academy (ZGA), where your fitness journey is our top priority. We are more than just a gym; we are a community of fitness enthusiasts committed to helping you achieve your health and fitness goals. With state-of-the-art facilities, expert trainers, and a supportive environment, we provide a holistic approach to fitness that is tailored to your individual needs.
+        p.hidden
+            | At ZGA, we believe in the power of personalized training. Our team of professional trainers works closely with each member to create customized workout plans that are not only effective but also enjoyable. Whether you are a beginner or a seasoned athlete, we have the resources and expertise to help you reach your potential.
+        p.hidden
+            | Our mission is to promote a healthy lifestyle by providing a safe, clean, and welcoming space for everyone. We are dedicated to fostering a sense of community where members can connect, motivate each other, and celebrate their successes together.
+        h2.hidden Our Values
+        ul.hidden
+            li Passion for fitness and well-being
+            li Commitment to excellence and continuous improvement
+            li Inclusivity and respect for all members
+            li Integrity and professionalism in everything we do
+        h2.hidden Our Facilities
+        p.hidden
+            | ZGA is equipped with modern exercise machines, free weights, and a variety of group fitness classes. We also offer amenities such as a sauna, locker rooms, and a lounge area where you can relax after your workout.
+        p.hidden
+            | Join us today and become part of the ZGA family. Let's work together to transform your body, improve your health, and enhance your quality of life.
+        h2.hidden Contact Us
+        p.hidden
+            | Have any questions or want to learn more about our programs? Feel free to reach out to us anytime. We are here to support you every step of the way on your fitness journey.
